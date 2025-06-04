@@ -75,7 +75,7 @@
                 ColorWrite(asset.Model.PadRight(15), colorMark);
                 ColorWrite(asset.PurchaseDate.ToString("yyyy-MM-dd").PadRight(15), colorMark);
                 ColorWrite($"{asset.Price.Currency} {asset.Price.Amount}".PadRight(15), colorMark);
-                ColorWrite($"{CurrencyConverter.Convert(asset.Price.Amount, asset.Price.Currency, Currency.USD):F2}", colorMark);
+                ColorWrite($"{CurrencyConverter.Convert(asset.Price.Amount, asset.Price.Currency, Currency.USD):F2}".PadRight(15), colorMark);
                 Console.WriteLine();
             }
         }
